@@ -1,0 +1,63 @@
+/*  title-text-color: #212121; text- color: #757575; accent-color: #2196F3;
+ */
+body {
+    font-family: 'Roboto'
+
+}
+
+:root {
+    --title-text-color: #212121;
+    --text-color: #757575;
+    --accent-color: #2196F3;
+
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* ------------header-------------- */
+
+
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.logo-accent {
+    color: var(--accent-color);
+}
+
+.nav-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--title-text-color);
+}
+
+.nav-item-current {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
+.header-mail, .header-tel{font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+
+color: var(--text-color);}
