@@ -1,8 +1,11 @@
 /*  title-text-color: #212121; text- color: #757575; accent-color: #2196F3;
  */
 body {
-    font-family: 'Roboto'
-
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #757575;
+    background: #F5F5F5;
 }
 
 :root {
@@ -22,6 +25,10 @@ body {
 
 /* ------------header-------------- */
 
+.header-mail:hover,
+.header-tel:hover {
+    color: var(--accent-color);
+}
 
 .logo {
     font-family: 'Raleway';
@@ -43,8 +50,11 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
     color: var(--title-text-color);
+}
+
+.nav-item:hover {
+    color: var(--accent-color);
 }
 
 .nav-item-current {
@@ -55,9 +65,213 @@ body {
     color: var(--accent-color);
 }
 
-.header-mail, .header-tel{font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
+.header-mail,
+.header-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
 
-color: var(--text-color);}
+/* ------Studio--------------сторінка студія ---------------- */
+/* ---------Hero---------- */
+.hero {
+    background-color: gray;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    /* or 136% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hero-btn {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+/* ---------Features -- Особливості------ */
+.features {}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+.feature-item-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+
+}
+
+.feature-item-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* ------------------Work ---Чим ми займаємося---------- */
+.work-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+/* ----------------team---Наша команда----------  */
+
+.team {
+    background: #F5F4FA;
+}
+
+.team-item {
+    background-color: #FFFFFF;
+    width: 270px;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+
+}
+
+.team-list {}
+
+.team-item-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.team-item-text {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+}
+
+/* ------foooter--------------- */
+.footer {
+    background: #2F303A;
+}
+
+.logo-footer {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.logo-accent {
+    color: var(--accent-color);
+}
+
+.adress-item {}
+
+.adress-link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.footer-mail,
+.footer-tel {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.adress-link:hover,
+.footer-mail:hover,
+.footer-tel:hover {
+    color: var(--accent-color);
+}
+
+/*------------page portfolio-- сторінка портфоліо-------------- */
+
+.portfolio {}
+
+.type-list {}
+
+.type-item {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    
+
+    background: #F5F4FA;
+    border-radius: 4px;
+    border-color: #F5F4FA;
+    cursor: pointer;
+}
+.type-ite:active {color: #FFFFFF;
+background-color: var(--accent-color);}
+
+.portfolio- {}
+
+.portfolio-link {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color)
+}
+
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
