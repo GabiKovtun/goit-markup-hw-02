@@ -168,7 +168,7 @@ body {
 /* ----------------team---Наша команда----------  */
 
 .team {
-    background: var(--light-background);
+    background: var(--light-background-color);
 }
 
 .team-item {
