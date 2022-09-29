@@ -172,7 +172,7 @@ body {
 }
 
 .team-item {
-    background-color: var(--light-background-color)
+    background-color: var(--white-color);
     width: 270px;
 }
 
