@@ -1,19 +1,22 @@
-/*  title-text-color: #212121; text- color: #757575; accent-color: #2196F3;
- */
-body {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: #757575;
-    background: #F5F5F5;
-}
-
 :root {
     --title-text-color: #212121;
     --text-color: #757575;
     --accent-color: #2196F3;
+    --aktive-accent-color: #188CE8;
+    --black-color: #000000;
+    --light-background-color: #F5F4FA;
+    --dark-background-color: #2F303A;
+    --white-color: #FFFFFF;
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
 
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background: var(--white-color);
+}
+
 
 .list {
     list-style: none;
@@ -36,14 +39,17 @@ body {
 }
 
 .logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    /* identical to box height */
+
     letter-spacing: 0.03em;
-    color: #000000;
+}
+
+.logo-header {
+    color: var(--black-color)
 }
 
 .logo-accent {
@@ -82,7 +88,7 @@ body {
 /* ------Studio--------------сторінка студія ---------------- */
 /* ---------Hero---------- */
 .hero {
-    background: #2F303A;
+    background-color: var(--dark-background-color);
 }
 
 .hero-title {
@@ -93,23 +99,27 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .hero-btn {
-    font-family: 'Roboto';
+    font-family: inherit;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--white-color);
     cursor: pointer;
 
-    background: #2196F3;
+    background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+}
 
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--aktive-accent-color);
 }
 
 /* ---------Features -- Особливості------ */
@@ -158,11 +168,11 @@ body {
 /* ----------------team---Наша команда----------  */
 
 .team {
-    background: #F5F4FA;
+    background: var(--light-background);
 }
 
 .team-item {
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
     width: 270px;
 }
 
@@ -197,15 +207,11 @@ body {
 
 /* ------foooter--------------- */
 .footer {
-    background: #2F303A;
+    background: var(--dark-background-color);
 }
 
 .logo-footer {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .logo-accent {
@@ -219,7 +225,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .footer-mail,
@@ -229,7 +235,7 @@ body {
     line-height: 1.71;
     /* or 171% */
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-contact-color)
 }
 
 .adress-link:hover,
@@ -251,7 +257,7 @@ body {
 .btn-list {}
 
 .btn-item {
-    font-family: 'Roboto';
+    font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -260,23 +266,26 @@ body {
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 
-    background: #F5F4FA;
+    background-color: var(--light-background-color);
     border-radius: 4px;
-    border-color: #F5F4FA;
+    border-color: transparent;
     cursor: pointer;
 }
 
-.btn-item:hover {
-    color: #FFFFFF;
+.btn-item:hover,
+.btn-item:focus {
+    color: var(--white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 
 .portfolio- {}
 
 .portfolio-item {
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    background-color: var(--white-color);
+    border: 1px transparent;
     width: 370px;
 }
 
